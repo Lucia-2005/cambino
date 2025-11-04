@@ -1,0 +1,10 @@
+<h1>Albums de Taylor Swift</h1>
+<!--actualizar para q muestre cosas de tay-->
+<ul>
+  @for (albums of albums; track albums.album_id) {
+    <li>
+      <h3><b>{{ albums.title }}</b> con numero de ID: {{ albums.album_id }}</h3>
+      <p>{{ albums.release_date }}</p>
+    </li>
+  }
+</ul>
